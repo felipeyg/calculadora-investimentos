@@ -1,0 +1,135 @@
+.calculadora-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #3498db;
+    margin-top: 30px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+  }
+  
+  form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .calcular-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .calcular-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .resultados {
+    margin-top: 30px;
+  }
+  
+  .resultado-final {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .resultado-item {
+    flex: 1;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+  }
+  
+  .resultado-item h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  
+  .resultado-item p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 0;
+  }
+  
+  .tabela-container {
+    overflow-x: auto;
+  }
+  
+  .tabela-resultados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tabela-resultados th, 
+  .tabela-resultados td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .tabela-resultados th {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .tabela-resultados tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .tabela-resultados tr:hover {
+    background-color: #e9f5ff;
+  }
+  
+  @media (max-width: 768px) {
+    .resultado-final {
+      flex-direction: column;
+    }
+    
+    .resultado-item {
+      margin: 10px 0;
+    }
+  }
